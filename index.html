@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bunker</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class ="head"> BUNKER </div>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="container">
+            <div class="main_inn">
+                <div class="section_text">
+                Your Character:
+                </div>
+                
+                <div class="cardhold">
+                    <div class="card" onclick="toggleTextColor(this)">
+                        <div class="card_title">Profession</div>
+                        <div class="card_desc" id="ProfCard">Your profession</div>
+                    </div>
+                    <div class="card" onclick="toggleTextColor(this)">
+                        <div class="card_title">Gender</div>
+                        <div class="card_desc" id="GenderCard" >Your gender</div>
+                    </div>
+                    <div class="card" onclick="toggleTextColor(this)">
+                        <div class="card_title">Age</div>
+                        <div class="card_desc" id="AgeCard">Your age</div>
+                    </div>
+                    <div class="card" onclick="toggleTextColor(this)">
+                        <div class= "card_title">Health</div>
+                        <div class="card_desc" id="HealthCard">Your health</div>
+                    </div>
+                    <div class="card" onclick="toggleTextColor(this)">
+                        <div class="card_title">Phobia</div>
+                        <div class="card_desc" id="PhobiaCard">Your phobia</div>
+                    </div>
+                    <div class="card" onclick="toggleTextColor(this)">
+                        <div class="card_title">Personality</div>
+                        <div class="card_desc" id="CharacterCard">Your personality</div>
+                    </div>
+                    <div class="card" onclick="toggleTextColor(this)">
+                        <div class="card_title">Hobby</div>
+                        <div class="card_desc" id="HobbyCard">Your hobby</div>
+                    </div>
+                    <div class="card" onclick="toggleTextColor(this)">
+                        <div class="card_title">Baggage</div>
+                        <div class="card_desc" id="BaggageCard">Your baggage</div>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button type="button" id="roll-button">Roll Character!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="footer_text">
+                <a href="https://github.com/KAMAbee" class="footer_text">By KAMAbee</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>  
+</html>

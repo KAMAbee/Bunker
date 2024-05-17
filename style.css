@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    height: 100%;
+    background: #454543;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 14px 57px -9px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 14px 57px -9px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 14px 57px -9px rgba(0,0,0,0.75);
+}
+.head{
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 60px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    margin: auto;
+}
+
+.main{
+    padding: 20px 0;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    background-color: #7d7d7d;
+    box-shadow: inset 0px 0px 110px -44px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 110px -44px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 110px -44px rgba(0,0,0,0.75);
+    flex-grow: 1;
+}
+.main_inn{
+    margin-top: 10px;
+}
+.section_text{
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    padding-left: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.card{
+    box-shadow: 8px 5px 19px 0px rgba(0,0,0,0.75);
+    box-shadow: 8px 5px 19px 0px rgba(0,0,0,0.75);
+    box-shadow: 8px 5px 19px 0px rgba(0,0,0,0.75);
+    width:160px;
+    background-color: white;
+    padding: 0px 10px;
+    padding-bottom: 20px;
+    background-color: #fccd30;
+    border-radius: 12px;
+    height: 200px;
+    border:5px solid;
+    margin: auto;
+    text-align: center;
+    backface-visibility: hidden;
+}
+.card.flipped {
+    transform: rotateY(360deg);
+    transition: transform 1s ease;
+    perspective: 5000px;
+    perspective: 1000px;
+}
+
+.card:hover{
+    cursor: pointer;
+    border: floralwhite solid 5px;
+}
+
+.card:active, .card.active {
+    color: floralwhite;
+    border: floralwhite solid 5px;
+    box-shadow: 8px 5px 19px 0px rgba(242, 242, 242, 0.75);
+    box-shadow: 8px 5px 19px 0px rgba(242, 242, 242, 0.75);
+    box-shadow: 8px 5px 19px 0px rgba(242, 242, 242, 0.75);
+    background-color: #c39b1a;
+}
+
+.card.active:hover{
+    border: rgb(181, 181, 181) 5px solid
+}
+.cardhold{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card_title{
+    display:flex;
+    justify-content: center;
+    margin-bottom:20px;
+    margin-top:20px; 
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size:26px;  
+    font-weight: 500;
+}
+.card_desc{
+    display:flex;
+    justify-content: center;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size:16px; 
+    margin-bottom:20px;
+    margin-top:40px;
+}
+
+.button{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+
+}
+#roll-button{
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size:30px;
+    border-radius: 10px;
+    background-color: #fccd30;
+    padding: 10px 30px;
+    border: black solid 3px;
+    font-weight: 700;
+}
+
+#roll-button:hover{
+    background-color: #c39b1a;
+    cursor: pointer;
+}
+
+#roll-button:active{
+    color: floralwhite;
+    background-color: #9c7d15;
+    border: floralwhite solid 3px;
+    cursor: pointer;
+}
+
+.footer{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    box-shadow: inset 0px 14px 57px -9px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 14px 57px -9px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 14px 57px -9px rgba(0,0,0,0.75);
+    background: #454543;
+    height:100%;
+}
+
+.footer_text{
+    text-decoration: none;
+    color: black;
+    margin: auto;
+}
+
+.footer_text:hover{
+    color: #9c7d15;
+}
+
+
+@media (max-width: 1329px) {
+    .cardhold {
+        flex-wrap: wrap;
+    }
+    .card{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 643px) {
+  
+    .card{
+        margin-top: 10px;
+    }
+}
+
+
+@media (min-height: 854px) {
+    .card{
+        margin-top: 10px;
+    }
+   
+}
